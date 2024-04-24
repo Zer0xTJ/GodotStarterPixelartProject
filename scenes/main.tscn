@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyjsj6oe3eemt"]
+
+[ext_resource type="Texture2D" uid="uid://db0jcg43710m" path="res://sprites/box.png" id="1_aqcb2"]
+
+[node name="main" type="Node2D"]
+
+[node name="Box" type="Sprite2D" parent="."]
+position = Vector2(193, 41)
+texture = ExtResource("1_aqcb2")
+
+[node name="Box2" type="Sprite2D" parent="."]
+position = Vector2(140, 53)
+texture = ExtResource("1_aqcb2")
+
+[node name="Box3" type="Sprite2D" parent="."]
+position = Vector2(257, 84)
+texture = ExtResource("1_aqcb2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Welcome" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.0
+offset_top = -21.5
+offset_right = 36.0
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Welcome"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CanvasLayer/Welcome/VBoxContainer"]
+modulate = Color(0.720164, 0.720164, 0.720164, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Welcome!"
+
+[node name="Text" type="Label" parent="CanvasLayer/Welcome/VBoxContainer"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.452293, 0.452293, 0.452293, 1)
+text = "Welcome to this starter project!, feel free to edit the theme."
+autowrap_mode = 2

@@ -1,0 +1,28 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://bgcv1akpmdud4"]
+
+[ext_resource type="FontFile" uid="uid://bu5ynjl858txg" path="res://fonts/StarterFont.ttf" id="1_3nw5g"]
+[ext_resource type="Texture2D" uid="uid://dkttkg0a4b8lq" path="res://themes/sprites/border.png" id="2_6lqs8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bsd1j"]
+texture = ExtResource("2_6lqs8")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+modulate_color = Color(0.344163, 0.181697, 9.62615e-08, 1)
+
+[resource]
+default_font_size = 4
+CheckBox/font_sizes/font_size = 4
+CheckBox/fonts/font = ExtResource("1_3nw5g")
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 0
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 5
+Label/fonts/font = ExtResource("1_3nw5g")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_bsd1j")
